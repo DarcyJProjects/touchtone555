@@ -81,10 +81,10 @@ For full details, see the [LICENCE.txt](https://github.com/DarcyJProjects/toucht
 ### 🪛 Assembly
 
 - Read each step fully before completing it to make sure you've read any handy tips :)
-1. **Order the PCB**
+1. **Order the PCB**<br>
    The KiCad project files (and pre-exported gerber files) are located in [/hardware](https://github.com/DarcyJProjects/touchtone555/tree/main/hardware).
 
-2. **Solder components in order**
+2. **Solder components in order**<br>
    Start with the smallest passive components (resistors, monolithic capacitors, diodes), then IC sockets, transistors, connectors/jacks/switches, ceramic and polyester capacitors, and finally the DC jack, trim potentiometers and the volume potentiometer.
    
    Soldering them systematically from smallest height to largest makes it a lot easier! Follow the component designators on the board, and in the BOM to make sure you are matching the correct values and components.
@@ -95,10 +95,10 @@ For full details, see the [LICENCE.txt](https://github.com/DarcyJProjects/toucht
    
    For the vibrato monolithic capacitors, you can start with soldering the top three in, and adding the lower two if you want increase the vibrato frequency.
 
-3. **Attach speaker & power**
+3. **Attach speaker & power**<br>
    The synth is designed to run on 9VDC, so I recommend using a 9V battery with a 9V battery to JST connector.
 
-4. **Tune keys**
+4. **Tune keys**<br>
    Use a tuner app (with a chromatic mode) or oscilloscope to set the individual key pitches via the blue trim potentiometers.
    
    Set the octave to the lowest octave (lowest position on the octave switch) and then start tuning with the highest note on the keyboard, which corresponds to the right-most trim pot. Turning it clockwise will increase the pitch, and anticlockwise will decrease the pitch. You are aiming for the highest note (in the lowest octave) to be E6.
@@ -107,8 +107,7 @@ For full details, see the [LICENCE.txt](https://github.com/DarcyJProjects/toucht
    
    Remember, as this is a series resistor network, adjusting the pitch of one potentiometer will adjust the pitch of all the other keys to the left of that key. This is why you should work right to left.
 
-5. **Vibrato depth**
-   
+5. **Vibrato depth**<br>
    By turning the vibrato depth trim pot, you can slightly adjust how strong the vibrato effect is. The change with each turn is minimal, so you'll need to turn it a lot to get any real difference. 
 
 6. **Have fun!**
