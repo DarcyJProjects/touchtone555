@@ -2,14 +2,6 @@
 
 This file lists the less standard components that may have slight variations from different sellers, so this information is to help you find the correct parts. The information and photos was taken from the listings I bought the items from (no copyright infringement intended).
 
-## 📍 Contents
-
-- [Switches](#switches)
-- [Speaker](#speaker)
-- [Volume Potentiometer](#volume-potentiometer)
-- [Headphone Jack](#headphone-jack)
-- [DC Power Jack](#dc-power-jack)
-
 ---
 
 ## Switches
