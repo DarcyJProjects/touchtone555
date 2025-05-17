@@ -4,7 +4,7 @@ The **TouchTone555** is a fully analogue, NE555-based synthesizer designed for l
 
 Read the full project write up at: [www.darcyjprojects.xyz](https://www.darcyjprojects.xyz/index.php/2025/04/07/analogue-synth-project-touchtone555/)
 
-[🔗 Share this project on LinkedIn](https://www.linkedin.com/shareArticle?mini=true&url=https://www.darcyjprojects.xyz/&title=TouchTone555%20Stylus%20Synth&summary=Check%20out%20this%20analogue%20NE555-based%20synthesizer%20project!)
+[🔗 Share this project on LinkedIn](https://www.linkedin.com/shareArticle?mini=true&url=https://www.darcyjprojects.xyz/index.php/2025/04/07/analogue-synth-project-touchtone555/&title=TouchTone555%20Stylus%20Synth&summary=Check%20out%20this%20analogue%20NE555-based%20synthesizer%20project!)
 
 ![image](https://raw.githubusercontent.com/DarcyJProjects/touchtone555/main/media/1.png)
 
