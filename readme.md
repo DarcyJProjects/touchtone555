@@ -28,14 +28,14 @@ Read the full project write up at: [www.darcyjprojects.xyz](https://www.darcyjpr
 - Onboard speaker with volume control, as well as a headphone output
 - Custom designed PCB, with a descriptive silkscreen
 
-<img title="" src="https://raw.githubusercontent.com/DarcyJProjects/touchtone555/main/media/3.png" alt="image" data-align="center" width="721">
+<img title="" src="https://raw.githubusercontent.com/DarcyJProjects/touchtone555/main/media/3.png" alt="image" data-align="center">
 
 ---
 
 ## 📷 Demo
 
-Check out the demo video here:
-👉 [Coming soon]
+Check out the demo video here:<br>
+👉 [Coming soon]<br>
 🎵 Features a cover of Littleroot Town from Pokémon.
 
 ---
@@ -116,17 +116,17 @@ For full details, see the [LICENCE.txt](https://github.com/DarcyJProjects/toucht
 
 ## 📂 Repo Structure
 
-TouchTone555/
-├── hardware/ # KiCad project + Gerbers
-├── media/ # Photos, demo videos, renders, etc 
-├── LICENCE # CERN-OHL-S v2
-└── README.md # this file!
+TouchTone555/<br>
+├── hardware/ # KiCad project + Gerbers<br>
+├── media/ # Photos, demo videos, renders, etc<br>
+├── LICENCE # CERN-OHL-S v2<br>
+└── README.md # this file!<br>
 
 ---
 
 ### 💬 Feedback & Contributions
 
-Feel free to fork, share, and build your own!
+Feel free to fork, share, and build your own!<br>
 If you build one, I’d love to see it - tag me on [LinkedIn](https://www.linkedin.com/in/darcywdjohnson/).
 
 ---
@@ -152,6 +152,6 @@ This was a personal challenge to push my understanding of analogue electronics b
 
 ---
 
-🛠️ Built for learning.
-❤️ Shared with the community.
+🛠️ Built for learning.<br>
+❤️ Shared with the community.<br>
 🔧 Darcy — [www.darcyjprojects.xyz](https://www.darcyjprojects.xyz)
