@@ -73,4 +73,4 @@ This file lists the less standard components that may have slight variations fro
 
 ---
 
-> 💡 *Note:* Exact part numbers and models may vary by region or vendor. These suggestions are the listings I bought my parts from, however, the stock may have changed since my purchase, so careful reference the PCB footprints and schematic values before purchasing. The compoenents listed here are only suggestions and are not guaranteed.
+> 💡 *Note:* Exact part numbers and models may vary by region or vendor. These suggestions are the listings I bought my parts from, however, the stock may have changed since my purchase, so carefully reference the PCB footprints and schematic values before purchasing. The components listed here are only suggestions and are not guaranteed.
