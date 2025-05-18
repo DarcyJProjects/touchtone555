@@ -46,7 +46,7 @@ Read the full project write up at: [www.darcyjprojects.xyz](https://www.darcyjpr
 ## 🎛 Features
 
 - Based on the NE555 in astable multivibrator configuration as the main audio oscillator
-- Individually tunable keys with trim potentiometers
+- Individually tuneable keys with trim potentiometers
 - Touch interface for the keys with a stylus
 - Octave switching via capacitor bank selection
 - Vibrato modulation using an RC oscillator on the 555's CV pin
