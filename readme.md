@@ -61,7 +61,8 @@ Read the full project write up at: [www.darcyjprojects.xyz](https://www.darcyjpr
 ## 📷 Demo
 
 Check out the demo video here:<br>
-👉 [Coming soon]<br>
+👉 [Watch the video](https://www.youtube.com/watch?v=lvPiY5EYj-0)<br>
+[<img title="" src="https://img.youtube.com/vi/lvPiY5EYj-0/0.jpg" alt="image">](https://www.youtube.com/watch?v=lvPiY5EYj-0)<br>
 🎵 Features a cover of Littleroot Town from Pokémon.
 
 ---
