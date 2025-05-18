@@ -19,27 +19,27 @@ Read the full project write up at: [www.darcyjprojects.xyz](https://www.darcyjpr
 
 ## 📑 Table of Contents
 
-* 🎛 Features
+* 🎛 [Features](#-features)
 
-* 📷 Demo
+* 📷 [Demo](#-demo)
 
-* 📜 Licence
+* 📜 [Licence](#-licence)
 
-* ⚡How It Works
+* ⚡[How It Works](#how-it-works)
 
-* 🛠️ Build Instructions
+* 🛠️ [Build Instructions](#%EF%B8%8F-build-instructions)
   
-  * 🧾 What You’ll Need
+  * 🧾 [What You’ll Need](#-what-youll-need)
   
-  * 🪛 Assembly
+  * 🪛 [Assembly](#-assembly)
 
-* 📂 Repo Structure
+* 📂 [Repo Structure](#-repo-structure)
 
-* 💬 Feedback & Contributions
+* 💬 [Feedback & Contributions](#-feedback--contributions)
 
-* 🔗 Acknowledgements
+* 🔗 [Acknowledgements](#-acknowledgements)
 
-* 🧠 Why I Built This
+* 🧠 [Why I Built This](#-why-i-built-this)
 
 ---
 
