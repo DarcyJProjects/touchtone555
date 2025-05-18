@@ -68,7 +68,7 @@ For full details, see the [LICENCE.txt](https://github.com/DarcyJProjects/toucht
 
 The TouchTone555 generates sound using an NE555 timer IC which is configured as an astable multivibrator. 
 
-<img title="" src="https://raw.githubusercontent.com/DarcyJProjects/touchtone555/main/media/how_it_works/ne555-operation.png" alt="image" data-align="center" width="342">
+<img title="" src="https://raw.githubusercontent.com/DarcyJProjects/touchtone555/main/media/how_it_works/ne555-operation.png" alt="image" data-align="center" width="340">
 
 Each key forms part of a series resistor network, which controls the oscillatorâ€™s frequency when the circuit is completed by touching a key with the stylus. The pitch is determined by which key is touched, and the selected octave capacitor.
 
@@ -76,19 +76,19 @@ Each key forms part of a series resistor network, which controls the oscillatorâ
 
 Octave switching is achieved by toggling between banks of capacitors connected to the NE555. The more capacitance connected (capacitors in parallel), the lower the resulting octave.
 
-<img title="" src="https://raw.githubusercontent.com/DarcyJProjects/touchtone555/main/media/how_it_works/octaves.jpg" alt="image" width="305" data-align="center">
+<img title="" src="https://raw.githubusercontent.com/DarcyJProjects/touchtone555/main/media/how_it_works/octaves.jpg" alt="image" width="340" data-align="center">
 
 Vibrato is achieved by modulating the NE555's control voltage pin using a separate RC oscillator, which uses RC (resistor-capacitor) pairs, capacitors, and a transistor to generate the low-frequency signal. The vibrato depth (or "mix") can be adjusted with the on-board trim potentiometer.
 
-<img title="" src="https://raw.githubusercontent.com/DarcyJProjects/touchtone555/main/media/how_it_works/vibrato-depth.gif" alt="image" data-align="center" width="275">
+<img title="" src="https://raw.githubusercontent.com/DarcyJProjects/touchtone555/main/media/how_it_works/vibrato-depth.gif" alt="image" data-align="center" width="340">
 
 The output signal is then passed through an LM386 and then through a simple push-pull amplifier to drive the onboard speaker and/or headphones. The LM386 acts as a buffer to ensure any loading from the amplifier doesn't affect the NE555 through its output pin. The supply voltage to the NE555 is also filtered with a resistor and capacitor to reduce any periodic voltage drop introduced by the amplifier.
 
-<img title="" src="https://raw.githubusercontent.com/DarcyJProjects/touchtone555/main/media/how_it_works/amplifier.jpg" alt="image" width="318" data-align="center">
+<img title="" src="https://raw.githubusercontent.com/DarcyJProjects/touchtone555/main/media/how_it_works/amplifier.jpg" alt="image" width="340" data-align="center">
 
 The power supply circuitry is simple: it supports a 9V DC input via either a JST connector, or a DC barrel jack. Two diodes prevent reverse polarity and ensure that the inputs cannot backfeed each other. 
 
-<img title="" src="https://raw.githubusercontent.com/DarcyJProjects/touchtone555/main/media/how_it_works/psu.png" alt="image" data-align="center" width="275">
+<img title="" src="https://raw.githubusercontent.com/DarcyJProjects/touchtone555/main/media/how_it_works/psu.png" alt="image" data-align="center" width="340">
 
 This project demonstrates the core concepts of oscillation, modulation, and amplification - no microcontroller required!
 
