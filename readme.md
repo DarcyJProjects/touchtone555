@@ -194,7 +194,7 @@ If you build one, I’d love to see it - tag me on [LinkedIn](https://www.linked
 ### 🔗 Acknowledgements
 
 - This is an independent work inspired by the classic Stylophone with no affiliation to Dubreq Ltd. or the original Stylophone product. All trademarks remain the property of their respective owners, and no copyright or trademark infringement is intended.
-- "Littleroot Town", composed by Gō Ichinose, from *Pokémon Ruby, Sapphire, & Emerald* (© Nintendo / Game Freak), is used under fair use as part of an educational demonstration.
+- "Littleroot Town", composed by Gō Ichinose, Junichi Masuda, & Morikazu Aoki, from *Pokémon Ruby, Sapphire, & Emerald* (© Nintendo / Game Freak), is used under fair use as part of an educational demonstration.
 
 ---
 
