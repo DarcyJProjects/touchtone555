@@ -6,7 +6,7 @@ Read the full project write up at: [www.darcyjprojects.xyz](https://www.darcyjpr
 
 [🔗 Share this project on LinkedIn](https://www.linkedin.com/shareArticle?mini=true&url=https://www.darcyjprojects.xyz/index.php/2025/04/07/analogue-synth-project-touchtone555/&title=TouchTone555%20Stylus%20Synth&summary=Check%20out%20this%20analogue%20NE555-based%20synthesizer%20project!)
 
-![image](https://raw.githubusercontent.com/DarcyJProjects/touchtone555/main/media/1.png)
+![image](https://raw.githubusercontent.com/DarcyJProjects/touchtone555/main/media/0.png)
 
 <p>
   This project is open source hardware under the <strong>CERN Open Hardware Licence Version 2 - Strongly Reciprocal (CERN-OHL-S v2)</strong>.
@@ -210,6 +210,7 @@ This was a personal challenge to push my understanding of analogue electronics b
 - PCB design with custom exposed planes (the key pads)
 - PCB footprint design
 
+![image](https://raw.githubusercontent.com/DarcyJProjects/touchtone555/main/media/1.png)
 ---
 
 🛠️ Built for learning.<br>
