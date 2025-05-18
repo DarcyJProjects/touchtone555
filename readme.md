@@ -17,6 +17,32 @@ Read the full project write up at: [www.darcyjprojects.xyz](https://www.darcyjpr
 
 ---
 
+## 📑 Table of Contents
+
+* 🎛 Features
+
+* 📷 Demo
+
+* 📜 Licence
+
+* ⚡How It Works
+
+* 🛠️ Build Instructions
+  
+  * 🧾 What You’ll Need
+  
+  * 🪛 Assembly
+
+* 📂 Repo Structure
+
+* 💬 Feedback & Contributions
+
+* 🔗 Acknowledgements
+
+* 🧠 Why I Built This
+
+---
+
 ## 🎛 Features
 
 - Based on the NE555 in astable multivibrator configuration as the main audio oscillator
@@ -131,9 +157,9 @@ This project demonstrates the core concepts of oscillation, modulation, and ampl
    The synth is designed to run on 9VDC, so I recommend using a 9V battery with a 9V battery to JST connector.
 
 4. **Stylus**<br>
-
+   
    In [/hardware](https://github.com/DarcyJProjects/touchtone555/tree/main/hardware), there is a 3D model of a stylus if you'd like to 3D print one, otherwise, a crocodile lead works really well too - just be careful not to push down too aggressively as to not damage the key pads.
-
+   
    If you take the 3D model route, you can feed a thin gauge wire through the hole in the centre of the stylus, and solder a small piece of metal to the wire at the tip of the stylus. I used a mini spade connector which I soldered and then bent around the tip. I smoothed out the contact surface by creating a sphere of solder. You'll need to tape the tip to the stylus to ensure it doesn't come off. This stylus isn't perfect, but it works :)
 
 5. **Tune keys**<br>
