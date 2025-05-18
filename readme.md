@@ -66,9 +66,9 @@ Check out the demo video here:<br>
 
 ---
 
-## 📜 License
+## 📜 Licence
 
-This project is licensed under the **CERN-OHL-S v2 Strongly Reciprocal**.  
+This project is licenced under the **CERN-OHL-S v2 Strongly Reciprocal**.  
 
 You are free to:
 
@@ -78,7 +78,7 @@ You are free to:
 
 - **Distribute** modified versions — **as long as you:**
   
-  - **Use the same CERN-OHL-S v2 license** (strong reciprocity), and
+  - **Use the same CERN-OHL-S v2 licence** (strong reciprocity), and
   
   - **Provide attribution to the original author**, and
   
