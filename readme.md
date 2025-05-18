@@ -76,7 +76,7 @@ Each key forms part of a series resistor network, which controls the oscillatorâ
 
 Octave switching is achieved by toggling between banks of capacitors connected to the NE555. The more capacitance connected (capacitors in parallel), the lower the resulting octave.
 
-<img title="" src="https://raw.githubusercontent.com/DarcyJProjects/touchtone555/main/media/how_it_works/octaves.png" alt="image" width="305" data-align="center">
+<img title="" src="https://raw.githubusercontent.com/DarcyJProjects/touchtone555/main/media/how_it_works/octaves.jpg" alt="image" width="305" data-align="center">
 
 Vibrato is achieved by modulating the NE555's control voltage pin using a separate RC oscillator, which uses RC (resistor-capacitor) pairs, capacitors, and a transistor to generate the low-frequency signal. The vibrato depth (or "mix") can be adjusted with the on-board trim potentiometer.
 
