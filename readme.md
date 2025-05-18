@@ -64,6 +64,38 @@ For full details, see the [LICENCE.txt](https://github.com/DarcyJProjects/toucht
 
 ---
 
+## ⚡How It Works
+
+The TouchTone555 generates sound using an NE555 timer IC which is configured as an astable multivibrator. 
+
+<img title="" src="https://raw.githubusercontent.com/DarcyJProjects/touchtone555/main/media/how_it_works/ne555-operation.png" alt="image" data-align="center" width="342">
+
+Each key forms part of a series resistor network, which controls the oscillator’s frequency when the circuit is completed by touching a key with the stylus. The pitch is determined by which key is touched, and the selected octave capacitor.
+
+<img title="" src="https://raw.githubusercontent.com/DarcyJProjects/touchtone555/main/media/how_it_works/resistor-network.png" alt="image" data-align="center" width="340">
+
+Octave switching is achieved by toggling between banks of capacitors connected to the NE555. The more capacitance connected (capacitors in parallel), the lower the resulting octave.
+
+<img title="" src="https://raw.githubusercontent.com/DarcyJProjects/touchtone555/main/media/how_it_works/octaves.png" alt="image" width="305" data-align="center">
+
+Vibrato is achieved by modulating the NE555's control voltage pin using a separate RC oscillator, which uses RC (resistor-capacitor) pairs, capacitors, and a transistor to generate the low-frequency signal. The vibrato depth (or "mix") can be adjusted with the on-board trim potentiometer.
+
+<img title="" src="https://raw.githubusercontent.com/DarcyJProjects/touchtone555/main/media/how_it_works/vibrato-depth.gif" alt="image" data-align="center" width="275">
+
+The output signal is then passed through an LM386 and then through a simple push-pull amplifier to drive the onboard speaker and/or headphones. The LM386 acts as a buffer to ensure any loading from the amplifier doesn't affect the NE555 through its output pin. The supply voltage to the NE555 is also filtered with a resistor and capacitor to reduce any periodic voltage drop introduced by the amplifier.
+
+<img title="" src="https://raw.githubusercontent.com/DarcyJProjects/touchtone555/main/media/how_it_works/amplifier.jpg" alt="image" width="318" data-align="center">
+
+The power supply circuitry is simple: it supports a 9V DC input via either a JST connector, or a DC barrel jack. Two diodes prevent reverse polarity and ensure that the inputs cannot backfeed each other. 
+
+<img title="" src="https://raw.githubusercontent.com/DarcyJProjects/touchtone555/main/media/how_it_works/psu.png" alt="image" data-align="center" width="275">
+
+This project demonstrates the core concepts of oscillation, modulation, and amplification - no microcontroller required!
+
+👉 For a full breakdown and more detail explanations, you can read the write-up here: [www.darcyjprojects.xyz](https://www.darcyjprojects.xyz/index.php/2025/04/07/analogue-synth-project-touchtone555/)
+
+---
+
 ## 🛠️ Build Instructions
 
 ![image](https://raw.githubusercontent.com/DarcyJProjects/touchtone555/main/media/4.png)
@@ -98,7 +130,13 @@ For full details, see the [LICENCE.txt](https://github.com/DarcyJProjects/toucht
 3. **Attach speaker & power**<br>
    The synth is designed to run on 9VDC, so I recommend using a 9V battery with a 9V battery to JST connector.
 
-4. **Tune keys**<br>
+4. **Stylus**<br>
+
+   In [/hardware](https://github.com/DarcyJProjects/touchtone555/tree/main/hardware), there is a 3D model of a stylus if you'd like to 3D print one, otherwise, a crocodile lead works really well too - just be careful not to push down too aggressively as to not damage the key pads.
+
+   If you take the 3D model route, you can feed a thin gauge wire through the hole in the centre of the stylus, and solder a small piece of metal to the wire at the tip of the stylus. I used a mini spade connector which I soldered and then bent around the tip. I smoothed out the contact surface by creating a sphere of solder. You'll need to tape the tip to the stylus to ensure it doesn't come off. This stylus isn't perfect, but it works :)
+
+5. **Tune keys**<br>
    Use a tuner app (with a chromatic mode) or oscilloscope to set the individual key pitches via the blue trim potentiometers.
    
    Set the octave to the lowest octave (lowest position on the octave switch) and then start tuning with the highest note on the keyboard, which corresponds to the right-most trim pot. Turning it clockwise will increase the pitch, and anticlockwise will decrease the pitch. You are aiming for the highest note (in the lowest octave) to be E6.
@@ -107,20 +145,16 @@ For full details, see the [LICENCE.txt](https://github.com/DarcyJProjects/toucht
    
    Remember, as this is a series resistor network, adjusting the pitch of one potentiometer will adjust the pitch of all the other keys to the left of that key. This is why you should work right to left.
 
-5. **Vibrato depth**<br>
+6. **Vibrato depth**<br>
    By turning the vibrato depth trim pot, you can slightly adjust how strong the vibrato effect is. The change with each turn is minimal, so you'll need to turn it a lot to get any real difference. 
 
-6. **Have fun!**
+7. **Have fun!**
 
 ---
 
 ## 📂 Repo Structure
 
-TouchTone555/<br>
-├── hardware/ # KiCad project + Gerbers<br>
-├── media/ # Photos, demo videos, renders, etc<br>
-├── LICENCE # CERN-OHL-S v2<br>
-└── README.md # this file!<br>
+TouchTone555/<br>├── hardware/ # KiCad project + Gerbers + Stylus 3D model<br>├── media/ # Photos, demo videos, renders, etc<br>├── LICENCE # CERN-OHL-S v2<br>└── README.md # this file!<br>
 
 ---
 
@@ -134,7 +168,7 @@ If you build one, I’d love to see it - tag me on [LinkedIn](https://www.linked
 ### 🔗 Acknowledgements
 
 - This is an independent work inspired by the classic Stylophone with no affiliation to Dubreq Ltd. or the original Stylophone product. All trademarks remain the property of their respective owners, and no copyright or trademark infringement is intended.
-- "Littleroot Town", composed by Gō Ichinose, from *Pokémon Ruby and Sapphire* (© Nintendo / Game Freak), is used under fair use as part of an educational demonstration.
+- "Littleroot Town", composed by Gō Ichinose, from *Pokémon Ruby, Sapphire, & Emerald* (© Nintendo / Game Freak), is used under fair use as part of an educational demonstration.
 
 ---
 
