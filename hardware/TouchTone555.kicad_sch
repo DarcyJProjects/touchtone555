@@ -1,7 +1,7 @@
 (kicad_sch
-	(version 20231120)
+	(version 20250114)
 	(generator "eeschema")
-	(generator_version "8.0")
+	(generator_version "9.0")
 	(uuid "c4bd329f-6bc4-4f0f-86a0-6d4ab25bdf19")
 	(paper "A4")
 	(title_block
@@ -206,42 +206,9 @@
 				)
 			)
 			(symbol "1825159-1_0_0"
-				(circle
-					(center -0.9525 -2.54)
-					(radius 0.3175)
-					(stroke
-						(width 0.254)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(circle
-					(center -0.9525 0)
-					(radius 0.3175)
-					(stroke
-						(width 0.254)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(circle
-					(center -0.9525 2.54)
-					(radius 0.3175)
-					(stroke
-						(width 0.254)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
 				(polyline
 					(pts
-						(xy -2.54 -2.54) (xy -1.27 -2.54)
+						(xy -2.54 2.54) (xy -1.27 2.54)
 					)
 					(stroke
 						(width 0.254)
@@ -265,8 +232,41 @@
 				)
 				(polyline
 					(pts
-						(xy -2.54 2.54) (xy -1.27 2.54)
+						(xy -2.54 -2.54) (xy -1.27 -2.54)
 					)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(circle
+					(center -0.9525 2.54)
+					(radius 0.3175)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(circle
+					(center -0.9525 0)
+					(radius 0.3175)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(circle
+					(center -0.9525 -2.54)
+					(radius 0.3175)
 					(stroke
 						(width 0.254)
 						(type default)
@@ -342,6 +342,7 @@
 					)
 				)
 			)
+			(embedded_fonts no)
 		)
 		(symbol "3296W-1-250:3296W-1-250"
 			(pin_names
@@ -579,18 +580,6 @@
 				)
 				(polyline
 					(pts
-						(xy -1.27 -1.27) (xy 0 1.016)
-					)
-					(stroke
-						(width 0.254)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
 						(xy -1.27 2.54) (xy 1.27 2.54)
 					)
 					(stroke
@@ -603,7 +592,19 @@
 				)
 				(polyline
 					(pts
-						(xy 0 1.016) (xy 1.27 -1.27)
+						(xy -1.27 2.54) (xy 1.27 2.54) (xy 0 1.27) (xy -1.27 2.54)
+					)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type outline)
+					)
+				)
+				(polyline
+					(pts
+						(xy -1.27 -1.27) (xy 0 1.016)
 					)
 					(stroke
 						(width 0.254)
@@ -627,7 +628,7 @@
 				)
 				(polyline
 					(pts
-						(xy 1.27 -1.27) (xy 2.54 1.016)
+						(xy 0 1.016) (xy 1.27 -1.27)
 					)
 					(stroke
 						(width 0.254)
@@ -640,6 +641,18 @@
 				(polyline
 					(pts
 						(xy 1.27 2.54) (xy 0 1.27)
+					)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 1.27 -1.27) (xy 2.54 1.016)
 					)
 					(stroke
 						(width 0.254)
@@ -697,18 +710,6 @@
 						(type none)
 					)
 				)
-				(polyline
-					(pts
-						(xy -1.27 2.54) (xy 1.27 2.54) (xy 0 1.27) (xy -1.27 2.54)
-					)
-					(stroke
-						(width 0.254)
-						(type default)
-					)
-					(fill
-						(type outline)
-					)
-				)
 				(pin passive line
 					(at -8.89 0 0)
 					(length 2.54)
@@ -764,6 +765,7 @@
 					)
 				)
 			)
+			(embedded_fonts no)
 		)
 		(symbol "Amplifier_Audio:LM386"
 			(pin_names
@@ -851,16 +853,16 @@
 			)
 			(symbol "LM386_1_1"
 				(pin input line
-					(at 0 -7.62 90)
-					(length 5.08)
-					(name "GAIN"
+					(at -7.62 2.54 0)
+					(length 2.54)
+					(name "+"
 						(effects
 							(font
-								(size 0.508 0.508)
+								(size 1.27 1.27)
 							)
 						)
 					)
-					(number "1"
+					(number "3"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -886,17 +888,17 @@
 						)
 					)
 				)
-				(pin input line
-					(at -7.62 2.54 0)
-					(length 2.54)
-					(name "+"
+				(pin power_in line
+					(at -2.54 7.62 270)
+					(length 3.81)
+					(name "V+"
 						(effects
 							(font
 								(size 1.27 1.27)
 							)
 						)
 					)
-					(number "3"
+					(number "6"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -915,42 +917,6 @@
 						)
 					)
 					(number "4"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin output line
-					(at 7.62 0 180)
-					(length 2.54)
-					(name "~"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "5"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin power_in line
-					(at -2.54 7.62 270)
-					(length 3.81)
-					(name "V+"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "6"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -977,6 +943,24 @@
 					)
 				)
 				(pin input line
+					(at 0 -7.62 90)
+					(length 5.08)
+					(name "GAIN"
+						(effects
+							(font
+								(size 0.508 0.508)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin input line
 					(at 2.54 -7.62 90)
 					(length 6.35)
 					(name "GAIN"
@@ -994,10 +978,31 @@
 						)
 					)
 				)
+				(pin output line
+					(at 7.62 0 180)
+					(length 2.54)
+					(name "~"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "5"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
 			)
+			(embedded_fonts no)
 		)
 		(symbol "Connector:Barrel_Jack_Switch"
-			(pin_names hide)
+			(pin_names
+				(hide yes)
+			)
 			(exclude_from_sim no)
 			(in_bom yes)
 			(on_board yes)
@@ -1074,10 +1079,10 @@
 						(type background)
 					)
 				)
-				(arc
-					(start -3.302 3.175)
-					(mid -3.9343 2.54)
-					(end -3.302 1.905)
+				(polyline
+					(pts
+						(xy -3.81 -2.54) (xy -2.54 -2.54) (xy -1.27 -1.27) (xy 0 -2.54) (xy 2.54 -2.54) (xy 5.08 -2.54)
+					)
 					(stroke
 						(width 0.254)
 						(type default)
@@ -1087,9 +1092,21 @@
 					)
 				)
 				(arc
-					(start -3.302 3.175)
+					(start -3.302 1.905)
 					(mid -3.9343 2.54)
-					(end -3.302 1.905)
+					(end -3.302 3.175)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(arc
+					(start -3.302 1.905)
+					(mid -3.9343 2.54)
+					(end -3.302 3.175)
 					(stroke
 						(width 0.254)
 						(type default)
@@ -1108,6 +1125,17 @@
 					)
 					(fill
 						(type none)
+					)
+				)
+				(rectangle
+					(start 3.683 3.175)
+					(end -3.302 1.905)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type outline)
 					)
 				)
 				(polyline
@@ -1134,29 +1162,6 @@
 						(type none)
 					)
 				)
-				(polyline
-					(pts
-						(xy -3.81 -2.54) (xy -2.54 -2.54) (xy -1.27 -1.27) (xy 0 -2.54) (xy 2.54 -2.54) (xy 5.08 -2.54)
-					)
-					(stroke
-						(width 0.254)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(rectangle
-					(start 3.683 3.175)
-					(end -3.302 1.905)
-					(stroke
-						(width 0.254)
-						(type default)
-					)
-					(fill
-						(type outline)
-					)
-				)
 			)
 			(symbol "Barrel_Jack_Switch_1_1"
 				(pin passive line
@@ -1170,24 +1175,6 @@
 						)
 					)
 					(number "1"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin passive line
-					(at 7.62 -2.54 180)
-					(length 2.54)
-					(name "~"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "2"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -1213,11 +1200,32 @@
 						)
 					)
 				)
+				(pin passive line
+					(at 7.62 -2.54 180)
+					(length 2.54)
+					(name "~"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
 			)
+			(embedded_fonts no)
 		)
 		(symbol "Connector_Generic:Conn_01x02"
 			(pin_names
-				(offset 1.016) hide)
+				(offset 1.016)
+				(hide yes)
+			)
 			(exclude_from_sim no)
 			(in_bom yes)
 			(on_board yes)
@@ -1284,14 +1292,14 @@
 			)
 			(symbol "Conn_01x02_1_1"
 				(rectangle
-					(start -1.27 -2.413)
-					(end 0 -2.667)
+					(start -1.27 1.27)
+					(end 1.27 -3.81)
 					(stroke
-						(width 0.1524)
+						(width 0.254)
 						(type default)
 					)
 					(fill
-						(type none)
+						(type background)
 					)
 				)
 				(rectangle
@@ -1306,14 +1314,14 @@
 					)
 				)
 				(rectangle
-					(start -1.27 1.27)
-					(end 1.27 -3.81)
+					(start -1.27 -2.413)
+					(end 0 -2.667)
 					(stroke
-						(width 0.254)
+						(width 0.1524)
 						(type default)
 					)
 					(fill
-						(type background)
+						(type none)
 					)
 				)
 				(pin passive line
@@ -1353,9 +1361,12 @@
 					)
 				)
 			)
+			(embedded_fonts no)
 		)
 		(symbol "Device:C"
-			(pin_numbers hide)
+			(pin_numbers
+				(hide yes)
+			)
 			(pin_names
 				(offset 0.254)
 			)
@@ -1428,7 +1439,7 @@
 			(symbol "C_0_1"
 				(polyline
 					(pts
-						(xy -2.032 -0.762) (xy 2.032 -0.762)
+						(xy -2.032 0.762) (xy 2.032 0.762)
 					)
 					(stroke
 						(width 0.508)
@@ -1440,7 +1451,7 @@
 				)
 				(polyline
 					(pts
-						(xy -2.032 0.762) (xy 2.032 0.762)
+						(xy -2.032 -0.762) (xy 2.032 -0.762)
 					)
 					(stroke
 						(width 0.508)
@@ -1489,9 +1500,12 @@
 					)
 				)
 			)
+			(embedded_fonts no)
 		)
 		(symbol "Device:C_Polarized"
-			(pin_numbers hide)
+			(pin_numbers
+				(hide yes)
+			)
 			(pin_names
 				(offset 0.254)
 			)
@@ -1647,11 +1661,16 @@
 					)
 				)
 			)
+			(embedded_fonts no)
 		)
 		(symbol "Device:LED"
-			(pin_numbers hide)
+			(pin_numbers
+				(hide yes)
+			)
 			(pin_names
-				(offset 1.016) hide)
+				(offset 1.016)
+				(hide yes)
+			)
 			(exclude_from_sim no)
 			(in_bom yes)
 			(on_board yes)
@@ -1719,10 +1738,22 @@
 			(symbol "LED_0_1"
 				(polyline
 					(pts
-						(xy -1.27 -1.27) (xy -1.27 1.27)
+						(xy -3.048 -0.762) (xy -4.572 -2.286) (xy -3.81 -2.286) (xy -4.572 -2.286) (xy -4.572 -1.524)
 					)
 					(stroke
-						(width 0.254)
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy -1.778 -0.762) (xy -3.302 -2.286) (xy -2.54 -2.286) (xy -3.302 -2.286) (xy -3.302 -1.524)
+					)
+					(stroke
+						(width 0)
 						(type default)
 					)
 					(fill
@@ -1743,7 +1774,7 @@
 				)
 				(polyline
 					(pts
-						(xy 1.27 -1.27) (xy 1.27 1.27) (xy -1.27 0) (xy 1.27 -1.27)
+						(xy -1.27 -1.27) (xy -1.27 1.27)
 					)
 					(stroke
 						(width 0.254)
@@ -1755,22 +1786,10 @@
 				)
 				(polyline
 					(pts
-						(xy -3.048 -0.762) (xy -4.572 -2.286) (xy -3.81 -2.286) (xy -4.572 -2.286) (xy -4.572 -1.524)
+						(xy 1.27 -1.27) (xy 1.27 1.27) (xy -1.27 0) (xy 1.27 -1.27)
 					)
 					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy -1.778 -0.762) (xy -3.302 -2.286) (xy -2.54 -2.286) (xy -3.302 -2.286) (xy -3.302 -1.524)
-					)
-					(stroke
-						(width 0)
+						(width 0.254)
 						(type default)
 					)
 					(fill
@@ -1816,9 +1835,12 @@
 					)
 				)
 			)
+			(embedded_fonts no)
 		)
 		(symbol "Device:R"
-			(pin_numbers hide)
+			(pin_numbers
+				(hide yes)
+			)
 			(pin_names
 				(offset 0)
 			)
@@ -1937,10 +1959,13 @@
 					)
 				)
 			)
+			(embedded_fonts no)
 		)
 		(symbol "Device:Speaker"
 			(pin_names
-				(offset 0) hide)
+				(offset 0)
+				(hide yes)
+			)
 			(exclude_from_sim no)
 			(in_bom yes)
 			(on_board yes)
@@ -2061,11 +2086,16 @@
 					)
 				)
 			)
+			(embedded_fonts no)
 		)
 		(symbol "Diode:1N5817"
-			(pin_numbers hide)
+			(pin_numbers
+				(hide yes)
+			)
 			(pin_names
-				(offset 1.016) hide)
+				(offset 1.016)
+				(hide yes)
+			)
 			(exclude_from_sim no)
 			(in_bom yes)
 			(on_board yes)
@@ -2133,10 +2163,10 @@
 			(symbol "1N5817_0_1"
 				(polyline
 					(pts
-						(xy 1.27 0) (xy -1.27 0)
+						(xy -1.905 0.635) (xy -1.905 1.27) (xy -1.27 1.27) (xy -1.27 -1.27) (xy -0.635 -1.27) (xy -0.635 -0.635)
 					)
 					(stroke
-						(width 0)
+						(width 0.254)
 						(type default)
 					)
 					(fill
@@ -2157,10 +2187,10 @@
 				)
 				(polyline
 					(pts
-						(xy -1.905 0.635) (xy -1.905 1.27) (xy -1.27 1.27) (xy -1.27 -1.27) (xy -0.635 -1.27) (xy -0.635 -0.635)
+						(xy 1.27 0) (xy -1.27 0)
 					)
 					(stroke
-						(width 0.254)
+						(width 0)
 						(type default)
 					)
 					(fill
@@ -2206,6 +2236,7 @@
 					)
 				)
 			)
+			(embedded_fonts no)
 		)
 		(symbol "PJ-320A_Library:PJ-320A"
 			(pin_names
@@ -2269,9 +2300,10 @@
 						(type none)
 					)
 				)
-				(rectangle
-					(start -1.905 1.905)
-					(end 1.905 5.08)
+				(polyline
+					(pts
+						(xy -1.905 13.335) (xy -0.635 16.51) (xy 0.635 16.51) (xy 1.905 13.335) (xy -1.905 13.335)
+					)
 					(stroke
 						(width 0)
 						(type solid)
@@ -2281,30 +2313,8 @@
 					)
 				)
 				(rectangle
-					(start -1.905 5.08)
-					(end 1.905 5.715)
-					(stroke
-						(width 0)
-						(type solid)
-					)
-					(fill
-						(type outline)
-					)
-				)
-				(rectangle
-					(start -1.905 5.715)
-					(end 1.905 8.89)
-					(stroke
-						(width 0)
-						(type solid)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(rectangle
-					(start -1.905 8.89)
-					(end 1.905 9.525)
+					(start -1.905 12.7)
+					(end 1.905 13.335)
 					(stroke
 						(width 0)
 						(type solid)
@@ -2325,8 +2335,8 @@
 					)
 				)
 				(rectangle
-					(start -1.905 12.7)
-					(end 1.905 13.335)
+					(start -1.905 8.89)
+					(end 1.905 9.525)
 					(stroke
 						(width 0)
 						(type solid)
@@ -2335,10 +2345,31 @@
 						(type outline)
 					)
 				)
-				(polyline
-					(pts
-						(xy -1.905 13.335) (xy -0.635 16.51) (xy 0.635 16.51) (xy 1.905 13.335) (xy -1.905 13.335)
+				(rectangle
+					(start -1.905 5.715)
+					(end 1.905 8.89)
+					(stroke
+						(width 0)
+						(type solid)
 					)
+					(fill
+						(type none)
+					)
+				)
+				(rectangle
+					(start -1.905 5.08)
+					(end 1.905 5.715)
+					(stroke
+						(width 0)
+						(type solid)
+					)
+					(fill
+						(type outline)
+					)
+				)
+				(rectangle
+					(start -1.905 1.905)
+					(end 1.905 5.08)
 					(stroke
 						(width 0)
 						(type solid)
@@ -2349,24 +2380,6 @@
 				)
 			)
 			(symbol "PJ-320A_1_1"
-				(pin bidirectional line
-					(at 0.635 3.175 180)
-					(length 2.54)
-					(name "Sleeve"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "1"
-						(effects
-							(font
-								(size 0.6096 0.6096)
-							)
-						)
-					)
-				)
 				(pin bidirectional line
 					(at 0.635 14.605 180)
 					(length 2.0066)
@@ -2421,7 +2434,26 @@
 						)
 					)
 				)
+				(pin bidirectional line
+					(at 0.635 3.175 180)
+					(length 2.54)
+					(name "Sleeve"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 0.6096 0.6096)
+							)
+						)
+					)
+				)
 			)
+			(embedded_fonts no)
 		)
 		(symbol "Timer:NE555P"
 			(exclude_from_sim no)
@@ -2492,24 +2524,6 @@
 			)
 			(symbol "NE555P_0_0"
 				(pin power_in line
-					(at 0 -10.16 90)
-					(length 2.54)
-					(name "GND"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "1"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin power_in line
 					(at 0 10.16 270)
 					(length 2.54)
 					(name "VCC"
@@ -2520,6 +2534,24 @@
 						)
 					)
 					(number "8"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin power_in line
+					(at 0 -10.16 90)
+					(length 2.54)
+					(name "GND"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -2571,17 +2603,17 @@
 						)
 					)
 				)
-				(pin output line
-					(at 12.7 5.08 180)
+				(pin input line
+					(at -12.7 0 0)
 					(length 3.81)
-					(name "Q"
+					(name "CV"
 						(effects
 							(font
 								(size 1.27 1.27)
 							)
 						)
 					)
-					(number "3"
+					(number "5"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -2607,35 +2639,17 @@
 						)
 					)
 				)
-				(pin input line
-					(at -12.7 0 0)
+				(pin output line
+					(at 12.7 5.08 180)
 					(length 3.81)
-					(name "CV"
+					(name "Q"
 						(effects
 							(font
 								(size 1.27 1.27)
 							)
 						)
 					)
-					(number "5"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin input line
-					(at 12.7 -5.08 180)
-					(length 3.81)
-					(name "THR"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "6"
+					(number "3"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -2661,11 +2675,32 @@
 						)
 					)
 				)
+				(pin input line
+					(at 12.7 -5.08 180)
+					(length 3.81)
+					(name "THR"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "6"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
 			)
+			(embedded_fonts no)
 		)
 		(symbol "Transistor_BJT:2N3904"
 			(pin_names
-				(offset 0) hide)
+				(offset 0)
+				(hide yes)
+			)
 			(exclude_from_sim no)
 			(in_bom yes)
 			(on_board yes)
@@ -2738,6 +2773,18 @@
 			(symbol "2N3904_0_1"
 				(polyline
 					(pts
+						(xy 0.635 1.905) (xy 0.635 -1.905) (xy 0.635 -1.905)
+					)
+					(stroke
+						(width 0.508)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
 						(xy 0.635 0.635) (xy 2.54 2.54)
 					)
 					(stroke
@@ -2760,12 +2807,11 @@
 						(type none)
 					)
 				)
-				(polyline
-					(pts
-						(xy 0.635 1.905) (xy 0.635 -1.905) (xy 0.635 -1.905)
-					)
+				(circle
+					(center 1.27 0)
+					(radius 2.8194)
 					(stroke
-						(width 0.508)
+						(width 0.254)
 						(type default)
 					)
 					(fill
@@ -2784,37 +2830,8 @@
 						(type outline)
 					)
 				)
-				(circle
-					(center 1.27 0)
-					(radius 2.8194)
-					(stroke
-						(width 0.254)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
 			)
 			(symbol "2N3904_1_1"
-				(pin passive line
-					(at 2.54 -5.08 90)
-					(length 2.54)
-					(name "E"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "1"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
 				(pin passive line
 					(at -5.08 0 0)
 					(length 5.715)
@@ -2851,11 +2868,32 @@
 						)
 					)
 				)
+				(pin passive line
+					(at 2.54 -5.08 90)
+					(length 2.54)
+					(name "E"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
 			)
+			(embedded_fonts no)
 		)
 		(symbol "Transistor_BJT:2N3906"
 			(pin_names
-				(offset 0) hide)
+				(offset 0)
+				(hide yes)
+			)
 			(exclude_from_sim no)
 			(in_bom yes)
 			(on_board yes)
@@ -2928,6 +2966,18 @@
 			(symbol "2N3906_0_1"
 				(polyline
 					(pts
+						(xy 0.635 1.905) (xy 0.635 -1.905) (xy 0.635 -1.905)
+					)
+					(stroke
+						(width 0.508)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
 						(xy 0.635 0.635) (xy 2.54 2.54)
 					)
 					(stroke
@@ -2950,12 +3000,11 @@
 						(type none)
 					)
 				)
-				(polyline
-					(pts
-						(xy 0.635 1.905) (xy 0.635 -1.905) (xy 0.635 -1.905)
-					)
+				(circle
+					(center 1.27 0)
+					(radius 2.8194)
 					(stroke
-						(width 0.508)
+						(width 0.254)
 						(type default)
 					)
 					(fill
@@ -2974,37 +3023,8 @@
 						(type outline)
 					)
 				)
-				(circle
-					(center 1.27 0)
-					(radius 2.8194)
-					(stroke
-						(width 0.254)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
 			)
 			(symbol "2N3906_1_1"
-				(pin passive line
-					(at 2.54 -5.08 90)
-					(length 2.54)
-					(name "E"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "1"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
 				(pin input line
 					(at -5.08 0 0)
 					(length 5.715)
@@ -3041,11 +3061,32 @@
 						)
 					)
 				)
+				(pin passive line
+					(at 2.54 -5.08 90)
+					(length 2.54)
+					(name "E"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
 			)
+			(embedded_fonts no)
 		)
 		(symbol "Transistor_BJT:BC548"
 			(pin_names
-				(offset 0) hide)
+				(offset 0)
+				(hide yes)
+			)
 			(exclude_from_sim no)
 			(in_bom yes)
 			(on_board yes)
@@ -3130,6 +3171,18 @@
 				)
 				(polyline
 					(pts
+						(xy 0.635 1.905) (xy 0.635 -1.905) (xy 0.635 -1.905)
+					)
+					(stroke
+						(width 0.508)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
 						(xy 0.635 0.635) (xy 2.54 2.54)
 					)
 					(stroke
@@ -3152,12 +3205,11 @@
 						(type none)
 					)
 				)
-				(polyline
-					(pts
-						(xy 0.635 1.905) (xy 0.635 -1.905) (xy 0.635 -1.905)
-					)
+				(circle
+					(center 1.27 0)
+					(radius 2.8194)
 					(stroke
-						(width 0.508)
+						(width 0.254)
 						(type default)
 					)
 					(fill
@@ -3176,37 +3228,8 @@
 						(type outline)
 					)
 				)
-				(circle
-					(center 1.27 0)
-					(radius 2.8194)
-					(stroke
-						(width 0.254)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
 			)
 			(symbol "BC548_1_1"
-				(pin passive line
-					(at 2.54 5.08 270)
-					(length 2.54)
-					(name "C"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "1"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
 				(pin input line
 					(at -5.08 0 0)
 					(length 5.08)
@@ -3218,6 +3241,24 @@
 						)
 					)
 					(number "2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 2.54 5.08 270)
+					(length 2.54)
+					(name "C"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -3244,6 +3285,7 @@
 					)
 				)
 			)
+			(embedded_fonts no)
 		)
 		(symbol "aliexpress switches:SS-24E04_2P4T_Slide_Switch"
 			(exclude_from_sim no)
@@ -3307,16 +3349,16 @@
 			)
 			(symbol "SS-24E04_2P4T_Slide_Switch_1_1"
 				(pin input line
-					(at -2.54 -1.27 0)
+					(at -2.54 11.43 0)
 					(length 2.54)
-					(name "1"
+					(name "4"
 						(effects
 							(font
 								(size 1.27 1.27)
 							)
 						)
 					)
-					(number "1"
+					(number "5"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -3325,34 +3367,16 @@
 					)
 				)
 				(pin input line
-					(at 8.89 -1.27 180)
+					(at -2.54 8.89 0)
 					(length 2.54)
-					(name "5"
+					(name "3"
 						(effects
 							(font
 								(size 1.27 1.27)
 							)
 						)
 					)
-					(number "10"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin input line
-					(at -2.54 1.27 0)
-					(length 2.54)
-					(name "2"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "2"
+					(number "4"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -3379,16 +3403,16 @@
 					)
 				)
 				(pin input line
-					(at -2.54 8.89 0)
+					(at -2.54 1.27 0)
 					(length 2.54)
-					(name "3"
+					(name "2"
 						(effects
 							(font
 								(size 1.27 1.27)
 							)
 						)
 					)
-					(number "4"
+					(number "2"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -3397,16 +3421,16 @@
 					)
 				)
 				(pin input line
-					(at -2.54 11.43 0)
+					(at -2.54 -1.27 0)
 					(length 2.54)
-					(name "4"
+					(name "1"
 						(effects
 							(font
 								(size 1.27 1.27)
 							)
 						)
 					)
-					(number "5"
+					(number "1"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -3486,13 +3510,36 @@
 						)
 					)
 				)
+				(pin input line
+					(at 8.89 -1.27 180)
+					(length 2.54)
+					(name "5"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "10"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
 			)
+			(embedded_fonts no)
 		)
 		(symbol "power:GND"
 			(power)
-			(pin_numbers hide)
+			(pin_numbers
+				(hide yes)
+			)
 			(pin_names
-				(offset 0) hide)
+				(offset 0)
+				(hide yes)
+			)
 			(exclude_from_sim no)
 			(in_bom yes)
 			(on_board yes)
@@ -3583,12 +3630,17 @@
 					)
 				)
 			)
+			(embedded_fonts no)
 		)
 		(symbol "power:VCC"
 			(power)
-			(pin_numbers hide)
+			(pin_numbers
+				(hide yes)
+			)
 			(pin_names
-				(offset 0) hide)
+				(offset 0)
+				(hide yes)
+			)
 			(exclude_from_sim no)
 			(in_bom yes)
 			(on_board yes)
@@ -3660,7 +3712,7 @@
 				)
 				(polyline
 					(pts
-						(xy 0 0) (xy 0 2.54)
+						(xy 0 2.54) (xy 0.762 1.27)
 					)
 					(stroke
 						(width 0)
@@ -3672,7 +3724,7 @@
 				)
 				(polyline
 					(pts
-						(xy 0 2.54) (xy 0.762 1.27)
+						(xy 0 0) (xy 0 2.54)
 					)
 					(stroke
 						(width 0)
@@ -3703,7 +3755,119 @@
 					)
 				)
 			)
+			(embedded_fonts no)
 		)
+	)
+	(text "NE555\nOSCILLATOR"
+		(exclude_from_sim no)
+		(at 34.036 27.94 0)
+		(effects
+			(font
+				(face "KiCad Font")
+				(size 1.905 1.905)
+				(thickness 0.381)
+				(bold yes)
+			)
+		)
+		(uuid "32cfe3d8-ead0-4937-a80b-4fe7a24e2d54")
+	)
+	(text "STYLUS"
+		(exclude_from_sim no)
+		(at 76.2 160.782 0)
+		(effects
+			(font
+				(face "KiCad Font")
+				(size 1.905 1.905)
+				(thickness 0.381)
+				(bold yes)
+			)
+		)
+		(uuid "3307fa61-49d7-4f48-8916-11765cc723c5")
+	)
+	(text "VIBRATO\nRC OSCILLATOR"
+		(exclude_from_sim no)
+		(at 221.742 96.266 0)
+		(effects
+			(font
+				(face "KiCad Font")
+				(size 1.905 1.905)
+				(thickness 0.381)
+				(bold yes)
+			)
+		)
+		(uuid "52344f8d-80ad-4ba0-a646-b9e2b9fb219e")
+	)
+	(text "KEY\nRESISTORS\n(CHECK ORIENTATION)"
+		(exclude_from_sim no)
+		(at 135.636 84.074 0)
+		(effects
+			(font
+				(face "KiCad Font")
+				(size 1.905 1.905)
+				(thickness 0.381)
+				(bold yes)
+			)
+		)
+		(uuid "571b085e-1397-4eeb-904c-0e7f0feff954")
+	)
+	(text "OCTAVE\nCAPACITORS\n"
+		(exclude_from_sim no)
+		(at 43.18 84.836 0)
+		(effects
+			(font
+				(face "KiCad Font")
+				(size 1.905 1.905)
+				(thickness 0.381)
+				(bold yes)
+			)
+		)
+		(uuid "68dcdc15-d3ae-4105-94c9-1b46da6925a8")
+	)
+	(text "AMPLIFIER\nBUFFER + PUSH-PULL"
+		(exclude_from_sim no)
+		(at 133.604 18.034 0)
+		(effects
+			(font
+				(face "KiCad Font")
+				(size 1.905 1.905)
+				(thickness 0.381)
+				(bold yes)
+			)
+		)
+		(uuid "70e7dc06-52ec-40b6-a3ec-ae4652dbddea")
+	)
+	(text "POWER SUPPLY"
+		(exclude_from_sim no)
+		(at 260.35 31.496 0)
+		(effects
+			(font
+				(face "KiCad Font")
+				(size 1.905 1.905)
+				(thickness 0.381)
+				(bold yes)
+			)
+		)
+		(uuid "79ff3e2d-56b7-4e23-923c-6f86d1a905a8")
+	)
+	(text_box "This source describes Open Hardware and is licenced under the CERN-OHL-S v2.\n\nYou may redistribute and modify this documentation and make products using it under the terms of the CERN-OHL-S v2 (https://ohwr.org/cern_ohl_s_v2.txt).\n\nThis project is © Darcy Johnson 2025"
+		(exclude_from_sim no)
+		(at 215.9 144.78 0)
+		(size 66.04 17.78)
+		(margins 0.9525 0.9525 0.9525 0.9525)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(fill
+			(type none)
+		)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left top)
+		)
+		(uuid "dd93ac35-8cfe-4c00-9f99-679fcde19eb6")
 	)
 	(junction
 		(at 33.02 151.13)
@@ -6929,119 +7093,8 @@
 		)
 		(uuid "ff48f2fd-3aaa-4b66-b286-cc27c45f9f05")
 	)
-	(text_box "This source describes Open Hardware and is licenced under the CERN-OHL-S v2.\n\nYou may redistribute and modify this documentation and make products using it under the terms of the CERN-OHL-S v2 (https://ohwr.org/cern_ohl_s_v2.txt).\n\nThis project is © Darcy Johnson 2025"
-		(exclude_from_sim no)
-		(at 215.9 144.78 0)
-		(size 66.04 17.78)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(fill
-			(type none)
-		)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left top)
-		)
-		(uuid "dd93ac35-8cfe-4c00-9f99-679fcde19eb6")
-	)
-	(text "NE555\nOSCILLATOR"
-		(exclude_from_sim no)
-		(at 34.036 27.94 0)
-		(effects
-			(font
-				(face "KiCad Font")
-				(size 1.905 1.905)
-				(thickness 0.381)
-				(bold yes)
-			)
-		)
-		(uuid "32cfe3d8-ead0-4937-a80b-4fe7a24e2d54")
-	)
-	(text "STYLUS"
-		(exclude_from_sim no)
-		(at 76.2 160.782 0)
-		(effects
-			(font
-				(face "KiCad Font")
-				(size 1.905 1.905)
-				(thickness 0.381)
-				(bold yes)
-			)
-		)
-		(uuid "3307fa61-49d7-4f48-8916-11765cc723c5")
-	)
-	(text "VIBRATO\nRC OSCILLATOR"
-		(exclude_from_sim no)
-		(at 221.742 96.266 0)
-		(effects
-			(font
-				(face "KiCad Font")
-				(size 1.905 1.905)
-				(thickness 0.381)
-				(bold yes)
-			)
-		)
-		(uuid "52344f8d-80ad-4ba0-a646-b9e2b9fb219e")
-	)
-	(text "KEY\nRESISTORS\n(CHECK ORIENTATION)"
-		(exclude_from_sim no)
-		(at 135.636 84.074 0)
-		(effects
-			(font
-				(face "KiCad Font")
-				(size 1.905 1.905)
-				(thickness 0.381)
-				(bold yes)
-			)
-		)
-		(uuid "571b085e-1397-4eeb-904c-0e7f0feff954")
-	)
-	(text "OCTAVE\nCAPACITORS\n"
-		(exclude_from_sim no)
-		(at 43.18 84.836 0)
-		(effects
-			(font
-				(face "KiCad Font")
-				(size 1.905 1.905)
-				(thickness 0.381)
-				(bold yes)
-			)
-		)
-		(uuid "68dcdc15-d3ae-4105-94c9-1b46da6925a8")
-	)
-	(text "AMPLIFIER\nBUFFER + PUSH-PULL"
-		(exclude_from_sim no)
-		(at 133.604 18.034 0)
-		(effects
-			(font
-				(face "KiCad Font")
-				(size 1.905 1.905)
-				(thickness 0.381)
-				(bold yes)
-			)
-		)
-		(uuid "70e7dc06-52ec-40b6-a3ec-ae4652dbddea")
-	)
-	(text "POWER SUPPLY"
-		(exclude_from_sim no)
-		(at 260.35 31.496 0)
-		(effects
-			(font
-				(face "KiCad Font")
-				(size 1.905 1.905)
-				(thickness 0.381)
-				(bold yes)
-			)
-		)
-		(uuid "79ff3e2d-56b7-4e23-923c-6f86d1a905a8")
-	)
 	(label "Vibrato Output"
 		(at 26.67 58.42 0)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -7053,7 +7106,6 @@
 	)
 	(label "Key 1"
 		(at 160.02 172.72 0)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -7065,7 +7117,6 @@
 	)
 	(label "Key 6"
 		(at 160.02 128.27 0)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -7077,7 +7128,6 @@
 	)
 	(label "Key 12"
 		(at 127 163.83 0)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -7089,7 +7139,6 @@
 	)
 	(label "Key 9"
 		(at 160.02 101.6 0)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -7101,7 +7150,6 @@
 	)
 	(label "Key 5"
 		(at 160.02 137.16 0)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -7113,7 +7161,6 @@
 	)
 	(label "555 Output"
 		(at 63.5 41.91 0)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -7125,7 +7172,6 @@
 	)
 	(label "Vibrato Output"
 		(at 262.89 114.3 90)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -7138,7 +7184,6 @@
 	)
 	(label "Key 2"
 		(at 160.02 163.83 0)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -7150,7 +7195,6 @@
 	)
 	(label "Key 4"
 		(at 160.02 146.05 0)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -7162,7 +7206,6 @@
 	)
 	(label "Key 14"
 		(at 127 146.05 0)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -7174,7 +7217,6 @@
 	)
 	(label "Key 8"
 		(at 160.02 110.49 0)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -7186,7 +7228,6 @@
 	)
 	(label "Key 19"
 		(at 127 101.6 0)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -7198,7 +7239,6 @@
 	)
 	(label "Key 20"
 		(at 127 92.71 0)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -7210,7 +7250,6 @@
 	)
 	(label "Timing Capacitors"
 		(at 63.5 52.07 0)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -7222,7 +7261,6 @@
 	)
 	(label "Timing Capacitors"
 		(at 71.12 119.38 0)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -7234,7 +7272,6 @@
 	)
 	(label "Key 11"
 		(at 127 172.72 0)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -7246,7 +7283,6 @@
 	)
 	(label "Key 7"
 		(at 160.02 119.38 0)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -7258,7 +7294,6 @@
 	)
 	(label "Key 10"
 		(at 160.02 92.71 0)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -7270,7 +7305,6 @@
 	)
 	(label "Stylus"
 		(at 81.28 167.64 0)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -7282,7 +7316,6 @@
 	)
 	(label "Key 16"
 		(at 127 128.27 0)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -7294,7 +7327,6 @@
 	)
 	(label "Timing Resistors"
 		(at 63.5 54.61 0)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -7306,7 +7338,6 @@
 	)
 	(label "Key 17"
 		(at 127 119.38 0)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -7318,7 +7349,6 @@
 	)
 	(label "Key 18"
 		(at 127 110.49 0)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -7330,7 +7360,6 @@
 	)
 	(label "Key 13"
 		(at 127 154.94 0)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -7342,7 +7371,6 @@
 	)
 	(label "Timing Resistors"
 		(at 92.71 99.06 180)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -7354,7 +7382,6 @@
 	)
 	(label "Key 15"
 		(at 127 137.16 0)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -7366,7 +7393,6 @@
 	)
 	(label "555 Output"
 		(at 109.22 39.37 180)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -7379,7 +7405,6 @@
 	)
 	(label "Stylus"
 		(at 63.5 44.45 0)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -7391,7 +7416,6 @@
 	)
 	(label "Key 3"
 		(at 160.02 154.94 0)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -7420,7 +7444,7 @@
 				(hide yes)
 			)
 		)
-		(property "Value" "3296W 10K"
+		(property "Value" "3296W 5K"
 			(at 118.11 149.86 0)
 			(effects
 				(font
@@ -7467,7 +7491,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description_1" "\nTRIMMER - 3/8in SQ MT CERMET | Bourns 3296W-1-250\n"
+		(property "Description_1" ""
 			(at 118.11 143.51 0)
 			(effects
 				(font
@@ -7614,7 +7638,7 @@
 				(hide yes)
 			)
 		)
-		(property "Value" "3296W 10K"
+		(property "Value" "3296W 5K"
 			(at 151.13 123.19 0)
 			(effects
 				(font
@@ -7661,7 +7685,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description_1" "\nTRIMMER - 3/8in SQ MT CERMET | Bourns 3296W-1-250\n"
+		(property "Description_1" ""
 			(at 151.13 116.84 0)
 			(effects
 				(font
@@ -7874,7 +7898,7 @@
 				(hide yes)
 			)
 		)
-		(property "Value" "3296W 10K"
+		(property "Value" "3296W 5K"
 			(at 118.11 114.3 0)
 			(effects
 				(font
@@ -7921,7 +7945,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description_1" "\nTRIMMER - 3/8in SQ MT CERMET | Bourns 3296W-1-250\n"
+		(property "Description_1" ""
 			(at 118.11 107.95 0)
 			(effects
 				(font
@@ -8068,7 +8092,7 @@
 				(hide yes)
 			)
 		)
-		(property "Value" "3296W 10K"
+		(property "Value" "3296W 5K"
 			(at 118.11 123.19 0)
 			(effects
 				(font
@@ -8115,7 +8139,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description_1" "\nTRIMMER - 3/8in SQ MT CERMET | Bourns 3296W-1-250\n"
+		(property "Description_1" ""
 			(at 118.11 116.84 0)
 			(effects
 				(font
@@ -8533,7 +8557,7 @@
 				(hide yes)
 			)
 		)
-		(property "Value" "3296W 10K"
+		(property "Value" "3296W 5K"
 			(at 151.13 158.75 0)
 			(effects
 				(font
@@ -8580,7 +8604,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description_1" "\nTRIMMER - 3/8in SQ MT CERMET | Bourns 3296W-1-250\n"
+		(property "Description_1" ""
 			(at 151.13 152.4 0)
 			(effects
 				(font
@@ -8862,7 +8886,7 @@
 				(hide yes)
 			)
 		)
-		(property "Value" "3296W 10K"
+		(property "Value" "3296W 5K"
 			(at 118.11 140.97 0)
 			(effects
 				(font
@@ -8909,7 +8933,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description_1" "\nTRIMMER - 3/8in SQ MT CERMET | Bourns 3296W-1-250\n"
+		(property "Description_1" ""
 			(at 118.11 134.62 0)
 			(effects
 				(font
@@ -9920,7 +9944,7 @@
 				(hide yes)
 			)
 		)
-		(property "Value" "3296W 10K"
+		(property "Value" "3296W 5K"
 			(at 151.13 176.53 0)
 			(effects
 				(font
@@ -9967,7 +9991,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description_1" "\nTRIMMER - 3/8in SQ MT CERMET | Bourns 3296W-1-250\n"
+		(property "Description_1" ""
 			(at 151.13 170.18 0)
 			(effects
 				(font
@@ -10114,7 +10138,7 @@
 				(hide yes)
 			)
 		)
-		(property "Value" "3296W 10K"
+		(property "Value" "3296W 5K"
 			(at 151.13 105.41 0)
 			(effects
 				(font
@@ -10161,7 +10185,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description_1" "\nTRIMMER - 3/8in SQ MT CERMET | Bourns 3296W-1-250\n"
+		(property "Description_1" ""
 			(at 151.13 99.06 0)
 			(effects
 				(font
@@ -10777,7 +10801,7 @@
 				(hide yes)
 			)
 		)
-		(property "Value" "3296W 10K"
+		(property "Value" "3296W 5K"
 			(at 151.13 149.86 0)
 			(effects
 				(font
@@ -10824,7 +10848,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description_1" "\nTRIMMER - 3/8in SQ MT CERMET | Bourns 3296W-1-250\n"
+		(property "Description_1" ""
 			(at 151.13 143.51 0)
 			(effects
 				(font
@@ -11107,7 +11131,7 @@
 				(hide yes)
 			)
 		)
-		(property "Value" "3296W 10K"
+		(property "Value" "3296W 5K"
 			(at 151.13 140.97 0)
 			(effects
 				(font
@@ -11154,7 +11178,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description_1" "\nTRIMMER - 3/8in SQ MT CERMET | Bourns 3296W-1-250\n"
+		(property "Description_1" ""
 			(at 151.13 134.62 0)
 			(effects
 				(font
@@ -11581,7 +11605,7 @@
 				(hide yes)
 			)
 		)
-		(property "Value" "3296W 10K"
+		(property "Value" "3296W 5K"
 			(at 118.11 176.53 0)
 			(effects
 				(font
@@ -11628,7 +11652,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description_1" "\nTRIMMER - 3/8in SQ MT CERMET | Bourns 3296W-1-250\n"
+		(property "Description_1" ""
 			(at 118.11 170.18 0)
 			(effects
 				(font
@@ -11998,7 +12022,7 @@
 				(hide yes)
 			)
 		)
-		(property "Value" "3296W 10K"
+		(property "Value" "3296W 5K"
 			(at 151.13 167.64 0)
 			(effects
 				(font
@@ -12045,7 +12069,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description_1" "\nTRIMMER - 3/8in SQ MT CERMET | Bourns 3296W-1-250\n"
+		(property "Description_1" ""
 			(at 151.13 161.29 0)
 			(effects
 				(font
@@ -12681,7 +12705,7 @@
 				(hide yes)
 			)
 		)
-		(property "Value" "3296W 10K"
+		(property "Value" "3296W 5K"
 			(at 118.11 105.41 0)
 			(effects
 				(font
@@ -12728,7 +12752,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description_1" "\nTRIMMER - 3/8in SQ MT CERMET | Bourns 3296W-1-250\n"
+		(property "Description_1" ""
 			(at 118.11 99.06 0)
 			(effects
 				(font
@@ -13008,7 +13032,7 @@
 				)
 			)
 		)
-		(property "Value" "3296W-1-250"
+		(property "Value" "3296W 10K"
 			(at 262.89 130.81 0)
 			(effects
 				(font
@@ -13054,7 +13078,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description_1" "\nTRIMMER - 3/8in SQ MT CERMET | Bourns 3296W-1-250\n"
+		(property "Description_1" ""
 			(at 262.89 124.46 0)
 			(effects
 				(font
@@ -13360,7 +13384,7 @@
 				(hide yes)
 			)
 		)
-		(property "Value" "3296W 10K"
+		(property "Value" "3296W 5K"
 			(at 151.13 114.3 0)
 			(effects
 				(font
@@ -13407,7 +13431,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description_1" "\nTRIMMER - 3/8in SQ MT CERMET | Bourns 3296W-1-250\n"
+		(property "Description_1" ""
 			(at 151.13 107.95 0)
 			(effects
 				(font
@@ -15055,7 +15079,7 @@
 				(hide yes)
 			)
 		)
-		(property "Value" "3296W 10K"
+		(property "Value" "3296W 5K"
 			(at 118.11 167.64 0)
 			(effects
 				(font
@@ -15102,7 +15126,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description_1" "\nTRIMMER - 3/8in SQ MT CERMET | Bourns 3296W-1-250\n"
+		(property "Description_1" ""
 			(at 118.11 161.29 0)
 			(effects
 				(font
@@ -15319,7 +15343,7 @@
 				(hide yes)
 			)
 		)
-		(property "Value" "3296W 10K"
+		(property "Value" "3296W 5K"
 			(at 151.13 132.08 0)
 			(effects
 				(font
@@ -15366,7 +15390,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description_1" "\nTRIMMER - 3/8in SQ MT CERMET | Bourns 3296W-1-250\n"
+		(property "Description_1" ""
 			(at 151.13 125.73 0)
 			(effects
 				(font
@@ -16091,7 +16115,7 @@
 				(hide yes)
 			)
 		)
-		(property "Value" "3296W 10K"
+		(property "Value" "3296W 5K"
 			(at 151.13 185.42 0)
 			(effects
 				(font
@@ -16138,7 +16162,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description_1" "\nTRIMMER - 3/8in SQ MT CERMET | Bourns 3296W-1-250\n"
+		(property "Description_1" ""
 			(at 151.13 179.07 0)
 			(effects
 				(font
@@ -16351,7 +16375,7 @@
 				)
 			)
 		)
-		(property "Value" "20K"
+		(property "Value" "10K"
 			(at 269.24 113.03 90)
 			(effects
 				(font
@@ -16420,7 +16444,7 @@
 				(hide yes)
 			)
 		)
-		(property "Value" "3296W 10K"
+		(property "Value" "3296W 5K"
 			(at 118.11 132.08 0)
 			(effects
 				(font
@@ -16467,7 +16491,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description_1" "\nTRIMMER - 3/8in SQ MT CERMET | Bourns 3296W-1-250\n"
+		(property "Description_1" ""
 			(at 118.11 125.73 0)
 			(effects
 				(font
@@ -16614,7 +16638,7 @@
 				(hide yes)
 			)
 		)
-		(property "Value" "3296W 10K"
+		(property "Value" "3296W 5K"
 			(at 118.11 158.75 0)
 			(effects
 				(font
@@ -16661,7 +16685,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description_1" "\nTRIMMER - 3/8in SQ MT CERMET | Bourns 3296W-1-250\n"
+		(property "Description_1" ""
 			(at 118.11 152.4 0)
 			(effects
 				(font
@@ -16808,7 +16832,7 @@
 				(hide yes)
 			)
 		)
-		(property "Value" "3296W 10K"
+		(property "Value" "3296W 5K"
 			(at 118.11 185.42 0)
 			(effects
 				(font
@@ -16855,7 +16879,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description_1" "\nTRIMMER - 3/8in SQ MT CERMET | Bourns 3296W-1-250\n"
+		(property "Description_1" ""
 			(at 118.11 179.07 0)
 			(effects
 				(font
@@ -16988,4 +17012,5 @@
 			(page "1")
 		)
 	)
+	(embedded_fonts no)
 )
