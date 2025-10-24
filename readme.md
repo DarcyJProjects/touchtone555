@@ -129,7 +129,7 @@ This project demonstrates the core concepts of oscillation, modulation, and ampl
 
 ### 🧾 What You’ll Need
 
-- All components as outlined in the [BOM (Bill-of-Materials)](https://github.com/DarcyJProjects/touchtone555/blob/main/hardware/Bill%20of%20Materials.csv)
+- All components as outlined in the [BOM (Bill-of-Materials)](https://github.com/DarcyJProjects/touchtone555/blob/main/hardware/bom.md)
 - To find the correct switches, speaker, audio jack, etc, see [Miscellaneous Parts](https://github.com/DarcyJProjects/touchtone555/blob/main/hardware/misc_parts.md)
 - PCB (See [KiCad Project](https://github.com/DarcyJProjects/touchtone555/tree/main/hardware))
 - Soldering iron and solder
