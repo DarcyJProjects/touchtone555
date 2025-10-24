@@ -1,6 +1,7 @@
 # BOM– TouchTone555
 
 This file lists the Bill of Materials (BOM) - the components required to complete this project.
+The regular csv BOM can be viewed here: [Bill of Materials.csv](https://github.com/DarcyJProjects/touchtone555/blob/main/hardware/Bill%20of%20Materials.csv)
 
 ---
 
@@ -34,7 +35,7 @@ This file lists the Bill of Materials (BOM) - the components required to complet
 | --- | -------------------------------- | ------------- | ------------------ |
 | 20  | Trimmer (3296W)                  | 5 kΩ          |                    |
 | 1   | Trimmer (3296W)                  | 10 kΩ         |                    |
-| 1   | Rotary Potentiometer (A5K RK097) | 5 kΩ          | **See Misc Parts** |
+| 1   | Rotary Potentiometer (A5K RK097) | 5 kΩ          | [**See Misc Parts**](https://github.com/DarcyJProjects/touchtone555/blob/main/hardware/misc_parts.md) |
 
 ### Capacitors
 
@@ -49,22 +50,22 @@ This file lists the Bill of Materials (BOM) - the components required to complet
 
 | Qty | Part           | Description                                |
 | --- | -------------- | ------------------------------------------ |
-| 1   | DC Barrel Jack | **See Misc Parts**                         |
+| 1   | DC Barrel Jack | [**See Misc Parts**](https://github.com/DarcyJProjects/touchtone555/blob/main/hardware/misc_parts.md)                        |
 | 3   | JST-PH 2-pin   | Stylus, speaker, and 9 V battery connector |
-| 1   | PJ-320A        | 3.5 mm audio jack **See Misc Parts**       |
+| 1   | PJ-320A        | 3.5 mm audio jack [**See Misc Parts**](https://github.com/DarcyJProjects/touchtone555/blob/main/hardware/misc_parts.md)       |
 
 ### Switches
 
 | Qty | Part                           | Description                                 |
 | --- | ------------------------------ | ------------------------------------------- |
-| 2   | 2 Position Slide Switch (SPDT) | Power and vibrato switch **See Misc Parts** |
-| 1   | 4 Position Slide Switch (2P4T) | Octave switch **See Misc Parts**            |
+| 2   | 2 Position Slide Switch (SPDT) | Power and vibrato switch [**See Misc Parts**](https://github.com/DarcyJProjects/touchtone555/blob/main/hardware/misc_parts.md) |
+| 1   | 4 Position Slide Switch (2P4T) | Octave switch [**See Misc Parts**](https://github.com/DarcyJProjects/touchtone555/blob/main/hardware/misc_parts.md)            |
 
 ### Speaker
 
 | Qty | Part    | Description                      |
 | --- | ------- | -------------------------------- |
-| 1   | Speaker | 8 Ω, 2W 40 mm **See Misc Parts** |
+| 1   | Speaker | 8 Ω, 2W 40 mm [**See Misc Parts**](https://github.com/DarcyJProjects/touchtone555/blob/main/hardware/misc_parts.md) |
 
 
 
